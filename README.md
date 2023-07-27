@@ -125,7 +125,7 @@ This repository contains a collection of code examples and projects showcasing t
 - [Getting Started](#getting-started)
 - [Examples](#examples)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -190,7 +190,7 @@ Here are a few examples of the ES6 features demonstrated in this repository:
    ```javascript
    class Animal {
      constructor(name) {
-       this.name = name;
+       this.name = "hilalsalarzi";
      }
 
      speak() {
@@ -202,7 +202,7 @@ Here are a few examples of the ES6 features demonstrated in this repository:
 3. **Template Literals:**
 
    ```javascript
-   const name = 'John';
+   const name = 'hilalsalarzi';
    const message = `Hello, ${name}!`;
    ```
 
