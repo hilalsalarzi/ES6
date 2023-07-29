@@ -1,0 +1,32 @@
+<script>
+    function prom(a,b){
+        return new Promise(function(resolve, reject){
+        document.write("Data is loading...");
+        let c=a/b;
+        setTimeout(()=>{
+            if(c){
+resolve(`You data is successfully loaded <br> answer: ${c}`);
+            } else {
+                reject(`failed to load data`);
+            }
+
+        },2000)
+       
+        });
+
+    }
+    //let onfulfilment = (result)=>{
+    //    document.write(`${result} is successfully`);
+   // }
+   // let onRejection = (error)=>{
+    ///    document.write(`data is rejected: ${error}`);
+    //}
+   // prom(true).then(onfulfilment);
+   // prom(true).catch(onRejection);
+  // prom(24,4).then(onfulfilment).catch(onRejection); //this is called chaining rule 
+   prom(24,4).then((result)=>{
+    document.write(`${result} is successfully`);
+}).catch( (error)=>{
+    document.write(`data is rejected: ${error}`);
+}); //we also can pass the arrow  function here
+</script>

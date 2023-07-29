@@ -1,0 +1,30 @@
+<script>
+    class student{
+        constructor(name="",age="",address="", salari=0){
+            this.myname=name;
+            this.myage=age;
+            this.myaddress=address;
+           // document.write('this is constructor <br>');
+        }
+        biodata(){
+            document.write(`Hello! my name is ${this.myname}, my age is ${this.myage} and my address is ${this.myaddress}<br>`);
+        }
+    }
+    class teacher extends student{
+        biodata(){
+           
+            let mysalari=20000;
+           document.write(`<h1> Teacher Class</h1>
+           name:${this.myname} <br>
+           age: ${this.myage} <br>
+           salari: ${mysalari} <br>
+           address: ${this.myaddress}
+           `); 
+           super.biodata();
+        }
+    }
+    let obj =new student("Hilal Ahmad",18,"peshawar");
+    let obj2 =new teacher("shehzad Ahmad",28,"Dir");
+    obj.biodata();
+    obj2.biodata();
+</script>
